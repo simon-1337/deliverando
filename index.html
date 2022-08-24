@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliverando</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+</head>
+<body onload="render()">
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h3>Deliverando.at</h3>
+        </div>
+        <div class="address">    
+            <p>Kampweg 4, 1220 Wien</p>
+        </div>
+        <div class="flag-container">
+            <img src="img/austria-flag.png" alt="">
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div class="restaurant">
+            <img class="header-img" src="img/burger.jpg" alt="">
+            <div class="logo-img">
+            <div class="logo-img-container">
+                <img src="img/burger-logo.png" alt="">
+            </div>
+            </div>
+            <div class="restaurant-child">
+                <div class="restaurant-info">
+                    <h1>Der Burgerladen</h1>
+                    <div class="rating">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <a href="reviews.html">(1,5k Bewertungen)</a>
+                    </div>
+                    <div class="delivery-info">
+                        <img src="img/clock.png" alt="">
+                        <p>45-60 min</p>
+                        <img src="img/bike.png" alt="">
+                        <p>1,90 €</p>
+                        <img src="img/shopping-bag-grey.png" alt="">
+                        <p>Min. 8,00 €</p>
+                    </div>
+                    <p>Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim Bestellabschluss bitte sicher, dass du dich für unseren Newsletter angemeldet hast, um deine Stempel per E-Mail zu erhalten.</p>
+                </div>
+
+                <div class="category-nav">
+                    <a href="#Beliebte Gerichte">Beliebte Gerichte</a>
+                    <a href="#Burger & Co">Burger & Co</a>
+                    <a href="#Pizza">Pizza</a>
+                    <a href="#Salate">Salate</a>
+                    <a href="#Traditionelle Küche">Traditionelle Küche</a>
+                    <a href="#Nachspeisen">Nachspeisen</a>
+                    <a href="#Alkoholfreie Getränke">Alkoholfreie Getränke</a>
+                </div>
+
+                <div id="products">
+                </div>
+            </div>
+        </div>
+
+        <div class="shopping-cart-container">
+            <div class="shopping-cart">
+                <h3 class="cart-headline">Warenkorb</h3>
+                <div id="cart-content" class="cart-content"></div>
+                <div id="cart-content-sum-section"></div>
+            </div>
+        </div>
+    
+        <div id="open-shopping-basket-container" class="open-shopping-basket-container d-none">
+            <button id="open-shopping-basket-button" class="open-shopping-basket" onclick="makePopUpCartVisible()"></button>
+        </div>
+    </div>
+
+    <div id="pop-up-shopping-cart" class="pop-up-shopping-cart d-none-pop-up">
+        <div class="pop-up-cart-headline">
+            <h3>Warenkorb</h3>
+            <button class="close-button" onclick="makePopUpCartInvisible()">x</button>
+        </div>
+        <div id="pop-up-cart-content"></div>
+        <div id="pop-up-cart-sum-section"></div>
+    </div>
+
+    <footer>
+        <div class="footer-child1">
+            <div class="logo-footer">
+                <img src="img/logo.png" alt="">
+                <h3>Deliverando.at</h3>
+            </div>
+            <span class="credits">“Created my design at LogoMakr.com”</span>
+        </div>
+        <div class="footer-child2">
+            <a href="agb.html">AGB</a> |
+            <a href="datenschutz.html">Datenschutz</a> |
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </footer>
+
+    <div id="bottom-placeholder" class="placeholder-basket-button d-none"></div>  <!-- placeholder to ensure that the whole footer is shown in responsive view -->
+</body>
+</html>
